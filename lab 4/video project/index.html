@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div>
+        <font size="6">
+            <h1>MOVIES-HUB</h1>
+        </font>
+    </div>
+    <hr>
+    <div class="container">
+        <font size="6">
+            <h2> November movie 2022</h2>
+        </font>
+        <div class="video-container">
+            <div class="video"><video src="/video project/video/vid1.mp4"></video></div>
+            <div class="video"><video src="/video project/video/vid2.mp4"></video></div>
+            <div class="video"><video src="/video project/video/vid3.mp4"></video></div>
+            <div class="video"><video src="/video project/video/vid4.mp4"></video></div>
+            <div class="video"><video src="/video project/video/vid5.mp4"></video></div>
+            <div class="video"><video src="/video project/video/vid6.mp4"></video></div>
+        </div>
+
+        <div class="popup-video">
+            <span>&times;</span>
+            <video src="video1.mp4" controls autoplay></video>
+        </div>
+    </div>
+    <hr>
+
+    <div class="container">
+        <font size="6">
+            <h2> December movie 2022</h2>
+        </font>
+        <div class="video-container">
+            <div class="video"><video src="/video project/video/dec/dec1.mp4"></video></div>
+            <div class="video"><video src="/video project/video/dec/dec2.mp4"></video></div>
+            <div class="video"><video src="/video project/video/dec/dec3.mp4"></video></div>
+            <div class="video"><video src="/video project/video/dec/dec4.mp4"></video></div>
+            <div class="video"><video src="/video project/video/dec/dec5.mp4"></video></div>
+            <div class="video"><video src="/video project/video/dec/dec6.mp4"></video></div>
+        </div>
+
+        <div class="popup-video">
+            <span>&times;</span>
+            <video src="video1.mp4" controls autoplay></video>
+        </div>
+    </div>
+    <hr>
+
+    <div class="container">
+        <font size="6">
+            <h2> January movie 2023</h2>
+        </font>
+        <div class="video-container">
+            <div class="video"><video src="/video project/video/jan/jan1.mp4"></video></div>
+            <div class="video"><video src="/video project/video/jan/jan2.mp4"></video></div>
+            <div class="video"><video src="/video project/video/jan/jan3.mp4"></video></div>
+            <div class="video"><video src="/video project/video/jan/jan4.mp4"></video></div>
+            <div class="video"><video src="/video project/video/jan/jan5.mp4"></video></div>
+            <div class="video"><video src="/video project/video/jan/jan6.mp4"></video></div>
+        </div>
+
+        <div class="popup-video">
+            <span>&times;</span>
+            <video src="video1.mp4" controls autoplay></video>
+        </div>
+    </div>
+    <hr>
+    <div>
+        <font align="right" size="4">
+            <h3> Page Designed By </h3>
+            <p><u>SATYAM NAYAK</u></p>
+        </font>
+    </div>
+    <script>
+        document.querySelectorAll('.video-container video').forEach(vid => {
+            vid.onclick = () => {
+                document.querySelector('.popup-video').style.display = 'block';
+                document.querySelector('.popup-video video').src = vid.getAttribute('src');
+            }
+        });
+
+        document.querySelector('.popup-video span').onclick = () => {
+            document.querySelector('.popup-video').style.display = 'none';
+        }
+    </script>
+</body>
+
+</html>
