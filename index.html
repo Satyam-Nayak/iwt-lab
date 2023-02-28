@@ -87,16 +87,15 @@
             font-family: Arial, sans-serif;
             background-color: #f5f5f5;
         }
-    
+
         h1 {
             text-align: center;
             color: #008000;
         }
-    
+
         h2 {
             color: #008000;
         }
-    
         .container {
             margin: 0 auto;
             max-width: 800px;
@@ -106,20 +105,21 @@
             animation-timing-function: ease-out;
             border-radius: 20px;
             background: linear-gradient(135deg, #f0f0f0, #ffffff);
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2), 0 0 10px rgba(0, 0, 0, 0.1) inset;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2),0 0 20px rgba(0, 0, 0, 0.2), 0 0 10px rgba(0, 0, 0, 0.1) inset;
         }
-    
+
         @keyframes containerAnim {
             0% {
                 transform: translateY(-20px);
                 opacity: 0;
             }
+
             100% {
                 transform: translateY(0);
                 opacity: 1;
             }
         }
-    
+
         .plant {
             display: flex;
             flex-wrap: wrap;
@@ -130,71 +130,92 @@
             box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
             border-radius: 10px;
         }
-    
+
         .plant img {
             max-width: 200px;
             margin-right: 20px;
             box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
             border-radius: 10px;
         }
-    
+
         .plant h2 {
             margin-top: 0;
             font-size: 24px;
             font-weight: bold;
             flex-basis: 100%;
         }
-    
+
         .plant p {
             margin-top: 10px;
             line-height: 1.5;
             flex-basis: 100%;
         }
-    
+
         .plant ul {
             margin-top: 10px;
             padding-left: 20px;
             flex-basis: 100%;
         }
-    
+
         .plant li {
             margin-top: 10px;
             line-height: 1.5;
         }
-    
+
         .plant:hover {
             transform: translateY(-5px);
-            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2), 0 0 10px rgba(0, 0, 0, 0.1) inset,
+              0 0 20px #b3e5fc, 0 0 30px #4fc3f7;
         }
-    
         .go-to-top {
             position: fixed;
             bottom: 20px;
             right: 20px;
-            background-color: #afe9af;
+            background-color: #0da09b;
             color: #fff;
             padding: 10px 20px;
             border-radius: 5px;
             cursor: pointer;
-            box-shadow: 0 0 5px rgb(255, 255, 255);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2),0 0 20px rgba(0, 0, 0, 0.2), 0 0 10px rgba(0, 0, 0, 0.1) inset;
         }
-    
+
         .go-to-top:hover {
-            background-color: #41dae2;
+            background-color: #000000;
         }
-        a {color: red;} 
+
+        .go-to-top a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .footer {
+            background: linear-gradient(to right, #ffffff, #c0ffae, #007f55, #005700);
+            height: 50px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: rgb(0, 0, 0);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 16px;
+            font-weight: bold;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+            border-radius: 10px 10px 0 0;
+        }
     </style>
+
 
 
 </head>
 
 <body>
     <div class="container">
-        <h1 style="font-family:  'Times New Roman', Times, serif;">5 Medicinal Plants and Their Health Benefits</h1>
-        <hr>
+        <h1 style="font-family: 'Times New Roman', Times, serif; text-shadow: 2px 2px 4px #aaa;">5 Medicinal Plants and Their Health Benefits</h1>
+
+      
 
         <div class="plant">
-            <img src="https://cdn.shopify.com/s/files/1/0037/7690/5283/articles/Aloe_Vera_1024x400.jpg?v=1605581440" alt="Aloe Vera">
+            <img src="https://cdn.shopify.com/s/files/1/0037/7690/5283/articles/Aloe_Vera_1024x400.jpg?v=1605581440"
+                alt="Aloe Vera">
             <h2>Aloe Vera</h2>
             <p>Aloe vera is a succulent plant with thick, fleshy leaves that contain a gel-like substance.</p>
             <ul>
@@ -206,9 +227,11 @@
 
 
         <div class="plant">
-            <img src="https://www.rhs.org.uk/getmedia/b2422c34-3281-42f9-87fd-56ad04c5c763/echinacea-desktop-hero-1920x978-01b.jpg?width=1920&height=978&ext=.jpg" alt="Echinacea">
+            <img src="https://www.rhs.org.uk/getmedia/b2422c34-3281-42f9-87fd-56ad04c5c763/echinacea-desktop-hero-1920x978-01b.jpg?width=1920&height=978&ext=.jpg"
+                alt="Echinacea">
             <h2>Echinacea</h2>
-            <p>Has showy flowers with pink, purple, or white petals. Grows up to 4 feet tall. Has a fibrous root system.</p>
+            <p>Has showy flowers with pink, purple, or white petals. Grows up to 4 feet tall. Has a fibrous root system.
+            </p>
             <ul>
                 <li>Flowering plant that belongs to the daisy family.</li>
                 <li>Has immune-boosting properties and can help prevent and treat the common cold and flu.</li>
@@ -218,13 +241,18 @@
 
 
         <div class="plant">
-            <img src="https://www.tastingtable.com/img/gallery/mint-vs-peppermint-whats-the-difference/l-intro-1659040922.jpg" alt="Peppermint">
+            <img src="https://www.tastingtable.com/img/gallery/mint-vs-peppermint-whats-the-difference/l-intro-1659040922.jpg"
+                alt="Peppermint">
             <h2>Peppermint</h2>
-            <p>A perennial herb that grows up to 3 feet tall. Has dark green leaves that are fragrant and slightly fuzzy. Contains compounds that can help relieve indigestion, headaches, and muscle pain.</p>
+            <p>A perennial herb that grows up to 3 feet tall. Has dark green leaves that are fragrant and slightly
+                fuzzy. Contains compounds that can help relieve indigestion, headaches, and muscle pain.</p>
             <ul>
-                <li>Digestive Aid: Peppermint contains menthol, which has a relaxing effect on the muscles in the digestive tract. This can help relieve symptoms of indigestion, bloating, and gas.</li>
-                <li>Headache Relief: Peppermint oil has a cooling effect that can help relieve tension headaches and migraines. It is often used in aromatherapy or as a topical treatment.</li>
-                <li>Muscle Pain Relief: Peppermint contains compounds that have a natural analgesic effect. Applying peppermint oil topically can help relieve sore muscles and joint pain.</li>
+                <li>Digestive Aid: Peppermint contains menthol, which has a relaxing effect on the muscles in the
+                    digestive tract. This can help relieve symptoms of indigestion, bloating, and gas.</li>
+                <li>Headache Relief: Peppermint oil has a cooling effect that can help relieve tension headaches and
+                    migraines. It is often used in aromatherapy or as a topical treatment.</li>
+                <li>Muscle Pain Relief: Peppermint contains compounds that have a natural analgesic effect. Applying
+                    peppermint oil topically can help relieve sore muscles and joint pain.</li>
             </ul>
         </div>
 
@@ -232,7 +260,8 @@
         <div class="plant">
             <img src="https://www.allaboutgardening.com/wp-content/uploads/2021/11/Grow-Turmeric.jpg" alt="Turmeric">
             <h2>Turmeric</h2>
-            <p>Has long, narrow leaves that grow up to 3 feet tall.Grows from a rhizome, which is an underground stem. Produces spikes of yellow flowers.</p>
+            <p>Has long, narrow leaves that grow up to 3 feet tall.Grows from a rhizome, which is an underground stem.
+                Produces spikes of yellow flowers.</p>
             <ul>
                 <li>Root from the ginger family with a bright yellow color.</li>
                 <li>Contains a compound called curcumin that has anti-inflammatory and antioxidant properties.</li>
@@ -244,7 +273,8 @@
         <div class="plant">
             <img src="https://source.unsplash.com/1600x900/?chamomile" alt="Chamomile">
             <h2>Chamomile</h2>
-            <p>Has daisy-like flowers with white petals and yellow centers. Grows up to 2 feet tall. Has feathery leaves that are finely divided.</p>
+            <p>Has daisy-like flowers with white petals and yellow centers. Grows up to 2 feet tall. Has feathery leaves
+                that are finely divided.</p>
             <ul>
                 <li>Flowering plant that is commonly used to make tea.</li>
                 <li>Has anti-inflammatory and antioxidant properties.</li>
@@ -252,7 +282,14 @@
             </ul>
         </div>
     </div>
-    <div class="go-to-top">
-        <a href="#top">top</a>
+    <div class="footer">
+        Page Created by Satyam Nayak 
     </div>
+    <div class="go-to-top">
+        <a href="#top">top_↑</a>
+    </div>
+
 </body>
+
+
+</html>
